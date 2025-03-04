@@ -97,7 +97,8 @@
                     <option value="5">5 - Excellent</option>
                 </select>
                 <textarea name="review" placeholder="Enter your review" rows="4" required></textarea>
-                <input type="text" name="photo_url" placeholder="Paste image URL (optional)">
+                <label for="photo">Upload a Photo (optional):</label>
+                <input type="file" name="photo" id="photo" accept="image/*">
                 <button type="submit">Submit Review</button>
             </form>
         </div>
