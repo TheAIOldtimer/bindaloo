@@ -75,6 +75,34 @@
             <p><iframe style="max-width: 100%; width: 560px; height: 315px;" src="https://www.youtube.com/embed/jhBFx2sZjjQ" frameborder="0" allowfullscreen></iframe></p>
         </div>
         <div class="form-container">
+            <h2>Submit a Toilet Review</h2>
+            <p>Help us build Bindaloo by submitting a toilet review. Share your experience!</p>
+            <form action="https://formspree.io/f/mkgodbga" method="POST" enctype="multipart/form-data">
+                <input type="text" name="toilet_name" placeholder="Toilet Name (e.g., Restaurant Name)" required>
+                <input type="text" name="location" placeholder="Location (City, Street)" required>
+                <label for="cleanliness">Cleanliness Rating:</label>
+                <select name="cleanliness" id="cleanliness">
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <label for="accessibility">Accessibility Rating:</label>
+                <select name="accessibility" id="accessibility">
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <textarea name="review" placeholder="Enter your review" rows="4" required></textarea>
+                <label for="photo">Upload a Photo (optional):</label>
+                <input type="file" name="photo" id="photo" accept="image/*">
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div class="form-container">
             <p>Register your interest:</p>
             <form action="https://formspree.io/f/mkgodbga" method="POST" enctype="multipart/form-data">
                 <input type="text" name="name" placeholder="Enter your name" required>
